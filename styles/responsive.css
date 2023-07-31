@@ -4,6 +4,7 @@
 @media screen and (max-width:1160px) {
     /* 1160px 이하일때 양옆 15px 여백 적용 */
     header {width:calc(100% - 30px);} /* calc는 꼭 띄어쓰기!!! */
+    /* main #pawin_slide {width:calc(100% - 30px);} */
 }/* 1160 end */
 
 /* Mobile */
@@ -26,4 +27,8 @@
     header nav .m_nav span:nth-child(3) {}
     /* m-nav-open */
     header .m_nav_open {display: block;}
-    /* 900 end */
+    /* pawin-slide */
+    main #pawin_slide .swiper-wrapper .slide1 {
+        background:url(/images/pawin_slide_m.jpg) center;
+    }
+}/* 900 end */
