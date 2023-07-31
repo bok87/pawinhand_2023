@@ -28,6 +28,8 @@
     /* m-nav-open */
     header .m_nav_open {display: block;}
     /* pawin-slide */
+    /* 반응형웹의 슬라이드는 높이 고정 슬라이드의 경우 데스크탑, 모바일용의 이미지를 따로 제작하고
+        @media 모바일조건에서 m 이미지로 변경하는 경로를 작성한다. */
     main #pawin_slide .swiper-wrapper .slide1 {
         background:url(/images/pawin_slide_m.jpg) center;
     }
