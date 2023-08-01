@@ -47,10 +47,34 @@ const pawin_slide = new Swiper('#pawin_slide', {
         prevEl: '#pawin_slide .swiper-button-prev',
     }
 });
-const m_slide = new Swiper('#m_slide', {
-    autoplay:{delay:1000}, loop:true, direction:'vertical',
-    navigation: {
-        nextEl: '#m_slide .swiper-button-next',
-        prevEl: '#m_slide .swiper-button-prev',
+// const m_slide = new Swiper('#m_slide', {
+//     autoplay:{delay:1000}, loop:true, direction:'vertical',
+//     navigation: {
+//         nextEl: '#m_slide .swiper-button-next',
+//         prevEl: '#m_slide .swiper-button-prev',
+//     }
+// });
+// pawin-slide2
+const pawin_slide2 = new Swiper('#pawin_slide2',{
+    autoplay:{delay:1000},
+    loop:true,
+    effect:'fade',
+})
+//입양정보 slide
+const dog_info_slide = new Swiper('#dog_info_slide',{
+    slidesPerView:'auto', //breakpoints 옵션추가시 'auto' 
+    //slidesPerView:4,  // 한번에 보이는 슬라이드 개수 4ro
+    spaceBetween:20, // 슬라이드 사이 여백
+    autoplay:{delay:1000,
+        disableOnInteraction:false
+    },
+        // swiper-slide 반응형웹 옵션
+    breakpoints:{
+        //해상도:{옵션값}
+        //해상도 순서는 작은 해상도 -> 큰 해상도 순으로 작성.
+        400:{slidesPerView:2}, //400~899
+        // 700:{slidesPerView:2}, //700 이상일떄
+        900:{slidesPerView:3}, //900 이상일떄
+        1160:{slidesPerView:4}, //1160 이상일 경우 슬라이드 4개 표시
     }
-});
+})
